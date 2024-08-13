@@ -1,0 +1,10 @@
+.accordion-item:where(:not(:last-child)){margin-bottom: 15px;}
+.accordion-heading{text-align: left; display: flex; justify-content: space-between; column-gap: 1.5rem; padding: .7rem 1.5rem; border: none; outline:none; cursor: pointer; font-size: 1.13rem; line-height: 1.4;}
+.accordion-heading[aria-selected="true"]{background-color: darkblue; color: #fff;}
+.accordion-heading::after{
+    content: '+';
+    font-size: 1.4rem;
+}
+.accordion-heading[aria-selected="true"]::after{content: '-'; font-size: 1.7rem; line-height: 1;}
+.accordion-content{display: none; padding: 1.5rem 1.5rem;}
+.accordion-content.show{display: block;}

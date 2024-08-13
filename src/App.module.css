@@ -1,0 +1,2 @@
+.text-center{text-align: center;}
+.container{max-width: clamp(575px, 85%, 1650px); margin-inline: auto;}
